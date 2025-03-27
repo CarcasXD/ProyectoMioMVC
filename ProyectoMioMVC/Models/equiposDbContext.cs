@@ -10,6 +10,6 @@ namespace ProyectoMioMVC.Models
         }
         public DbSet<marcas> marcas { get; set; }
         public DbSet<usuarios> usuarios { get; set; }
-        public DbSet<Equipo> Equipo { get; set; }
+        public DbSet<equipos> equipos { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace ProyectoMioMVC.Models
 {
-    public class Equipo
+    public class equipos
     {
         
             [Key]
