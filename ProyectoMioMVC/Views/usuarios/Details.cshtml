@@ -1,0 +1,78 @@
+﻿@model ProyectoMioMVC.Models.usuarios
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>usuarios</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.documento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.documento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.carnet)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.carnet)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.carrera_id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.carrera_id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.contrasenia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.contrasenia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tipo_usuario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tipo_usuario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.bloqueado)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.bloqueado)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ultimo_login)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ultimo_login)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.activo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.activo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.id_usuario">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

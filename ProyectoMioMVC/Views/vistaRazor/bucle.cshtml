@@ -1,0 +1,28 @@
+﻿@*
+    
+*@
+@{
+    ViewBag.Title = "bucle";
+    var contarlinea = 10;
+}
+@{
+    <h2>bucles</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < 9; i++)
+            {
+                <tr>
+                    <td>@i .</td>
+                    <td>Cliente numero @i</td>
+                </tr>    
+            }
+        </tbody>
+    </table>
+}
